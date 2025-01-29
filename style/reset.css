@@ -1,0 +1,27 @@
+/* обнуление базовых стилей  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* ссылки */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+	color: white;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}

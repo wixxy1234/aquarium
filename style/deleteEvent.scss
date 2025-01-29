@@ -1,0 +1,52 @@
+@use 'mainStyle.scss';
+
+table {
+    font-family: mainStyle.$font-regular;   
+    width: 100%;
+}
+
+table, th, td{
+    table-layout: fixed;
+    color: mainStyle.$primary-color !important;
+    background-color: mainStyle.$bg-color !important;
+    border: 1px solid mainStyle.$primary-color !important;
+}
+caption {
+    caption-side: top;
+    color: mainStyle.$primary-color !important;
+    font-family: mainStyle.$font-extraBold;   
+    font-size: clamp(12px, 2vw, 20px);
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: clamp(2px, 1vw,10px) !important;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: clamp(8px, 2vw, 16px);
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 4%; 
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 19%; 
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; 
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 10%; 
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 25%; 
+}
+
+td{
+    a {
+        cursor: pointer;
+    }
+}

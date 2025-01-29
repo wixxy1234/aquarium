@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+.main-desc {
+  margin-bottom: clamp(35px, 10vw, 70px);
+}
+.main-desc .main-desc__img {
+  transform: rotate(12deg);
+  width: auto;
+  height: clamp(130px, 17vw, 230px);
+}
+.main-desc .main-desc__name {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(24px, 2vw, 35px);
+  letter-spacing: 2.5px;
+}
+.main-desc .main-desc__desc {
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(12px, 1.8vw, 20px);
+}
+
+.ticket-row {
+  padding-bottom: 12px;
+  font-family: "Futurica Regular", "sans-serif";
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.ticket-row__name {
+  font-size: clamp(12px, 2vw, 20px);
+  letter-spacing: 0.8px;
+}
+
+.ticket-row__name_desc {
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(8px, 2vw, 12px);
+}
+
+.ticket-row__cost,
+.ticket-row__cost_currency {
+  font-size: clamp(12px, 1.8vw, 22px);
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 660px) {
+  .ticket-row__img .img-ticket {
+    height: 45px;
+  }
+}
+@media (max-width: 425px) {
+  .ticket-row__img .img-ticket {
+    height: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .ticket-row__img .img-ticket {
+    height: 25px;
+  }
+}
+
+.ticket-row__btns .ticket-row__count-ticket {
+  font-size: clamp(14px, 2vw, 24px);
+}
+.ticket-row__btns .ticket-row__btn {
+  background-color: transparent !important;
+  color: #FFFFFF;
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(14px, 2vw, 35px);
+}
+.ticket-row__btns .ticket-row__btn_minus {
+  font-size: clamp(10px, 1.6vw, 21px);
+  background-color: transparent;
+}
+
+.footnote {
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(10px, 1.6vw, 13px);
+}
+
+.total,
+.text-total {
+  font-size: clamp(15px, 2.2vw, 20px);
+}
+
+.btns-ticket {
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.btn-buy {
+  background-color: rgb(0, 61, 188);
+}
+.btn-buy:hover {
+  background-color: rgb(8, 54, 155);
+}
+
+.btn-exit {
+  background-color: rgb(83, 83, 83);
+}
+.btn-exit:hover {
+  background-color: rgb(63, 62, 62);
+}
+
+.btn-redact {
+  width: -moz-min-content;
+  width: min-content;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+.btn-redact:hover {
+  background-color: rgb(63, 62, 62);
+  border: 1px solid #FFFFFF;
+}
+
+.circle {
+  display: block;
+  position: absolute;
+  background: radial-gradient(rgba(67, 171, 225, 0.4) 0%, rgba(0, 28, 86, 0.8) 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+@media (max-width: 530px) {
+  .circle {
+    display: none;
+  }
+}
+
+.row__circle_extra-small {
+  z-index: -1;
+  left: 350px;
+  top: 250px;
+  height: clamp(50px, 50vw, 200px);
+  width: clamp(50px, 50vw, 200px);
+}
+
+.alert {
+  height: 10px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  visibility: hidden;
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.alert.d-block {
+  height: -moz-min-content;
+  height: min-content;
+  visibility: visible !important;
+  opacity: 1 !important;
+}/*# sourceMappingURL=ticketPage.css.map */

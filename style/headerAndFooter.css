@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  background: transparent;
+}
+header .navbar__logo-brand {
+  font-size: clamp(14px, 1.7vw, 24px);
+}
+header .navbar__logo-desc {
+  font-size: clamp(11px, 1.7vw, 16px);
+}
+header .navbar__logo-img {
+  height: clamp(40px, 5vw, 70px);
+}
+header li a {
+  font-size: clamp(11px, 1.7vw, 18px) !important;
+}
+header .navbar-toggler {
+  border: none !important;
+}
+header .navbar-toggler img {
+  height: clamp(20px, 3vw, 40px);
+}
+header .navbar-toggler:focus,
+header .navbar-toggler:focus-visible {
+  box-shadow: none !important;
+}
+@media (max-width: 768px) {
+  header .nav-link img {
+    height: clamp(15px, 6vw, 25px);
+  }
+}
+
+footer {
+  background: #000;
+}
+footer .navbar__logo-brand {
+  font-size: clamp(10px, 1.7vw, 18px);
+}
+footer .navbar__logo-desc {
+  font-size: clamp(9px, 1.7vw, 13px);
+}
+footer .navbar__logo-img {
+  height: clamp(35px, 5vw, 60px);
+}
+footer li {
+  font-size: clamp(9.7px, 1.7vw, 16px);
+  list-style: none;
+}
+footer .line {
+  height: 1px;
+  width: 100%;
+  background-color: #FFFFFF !important;
+}
+footer .second-floord__copyright {
+  font-size: clamp(10px, 1.4vw, 14px) !important;
+}
+footer .second-floor__social-media img {
+  height: clamp(15px, 2vw, 30px);
+}
+footer .second-floor__social-media #yandex {
+  height: clamp(11px, 1.5vw, 22px);
+  vertical-align: top;
+}
+@media (max-height: 1030px) {
+  footer .second-floor__social-media #yandex {
+    vertical-align: middle !important;
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 420px) {
+  footer .nav-link {
+    padding-top: 10px !important;
+  }
+}
+
+#exampleModal {
+  color: black;
+}
+#exampleModal h1 {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(15px, 2vw, 30px);
+  margin: 0;
+  letter-spacing: 1px;
+}
+#exampleModal p {
+  font-size: clamp(11px, 2vw, 14px);
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+#exampleModal span {
+  font-size: 12px;
+}
+#exampleModal a {
+  color: #333 !important;
+  font-size: clamp(8px, 2vw, 14px);
+  text-decoration: none;
+  margin: 15px 0;
+  cursor: pointer;
+}
+#exampleModal a::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+#exampleModal a:hover::after,
+#exampleModal a:focus:after {
+  width: 100%;
+}
+#exampleModal button {
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  font-size: clamp(9px, 2vw, 16px);
+  padding: 9px clamp(20px, 2.6vw, 45px);
+  letter-spacing: 1px;
+}
+#exampleModal button:focus {
+  outline: none;
+}
+#exampleModal button.ghost {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+  color: #FFFFFF;
+  width: 90%;
+  padding: 9px clamp(5px, 2vw, 45px);
+}
+#exampleModal button.ghost:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#exampleModal form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 clamp(10px, 2vw, 50px);
+  height: 100%;
+  text-align: center;
+}
+#exampleModal input {
+  background-color: #eaeaea;
+  color: #474545;
+  border-radius: 50px;
+  border: none;
+  padding: 9px 20px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: clamp(10px, 2vw, 16px);
+}
+#exampleModal input::target-text {
+  border: 20px solid;
+}
+#exampleModal .modal-content {
+  width: 700px;
+}
+#exampleModal .modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  height: 480px;
+  margin-top: 10%;
+}
+@media (max-width: 550px) {
+  #exampleModal .modal-content {
+    height: 380px;
+  }
+}
+#exampleModal .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+#exampleModal .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+#exampleModal .container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+#exampleModal .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+#exampleModal .container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+#exampleModal .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+#exampleModal .container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+#exampleModal .overlay {
+  background-image: url(/img/form/most.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+#exampleModal .container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+#exampleModal .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 clamp(10px, 2vw, 50px);
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+#exampleModal .overlay-left {
+  transform: translateX(-20%);
+}
+#exampleModal .container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+#exampleModal .overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+#exampleModal .container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+header,
+footer {
+  font-family: "Futurica Regular", "sans-serif" !important;
+  color: #FFFFFF !important;
+}
+header a,
+footer a {
+  color: #FFFFFF !important;
+}
+header .navbar__logo-name,
+footer .navbar__logo-name {
+  color: #FFFFFF !important;
+  line-height: clamp(14px, 2vw, 20px) !important;
+}/*# sourceMappingURL=headerAndFooter.css.map */

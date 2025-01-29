@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+body {
+  background-color: #000;
+  color: #FFFFFF;
+  font-family: "Futurica Regular", "sans-serif";
+}
+
+.logo__wrapper_small {
+  font-size: clamp(16px, 2vw, 32px);
+  letter-spacing: 3px;
+}
+
+.logo__wrapper_big {
+  background-image: url(/img/aboutUsPage/logo_name.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: clamp(100px, 20vw, 200px) !important;
+}
+
+.info__box,
+.facts__box,
+.contacts__box,
+.qa__box {
+  margin-top: clamp(20px, 8vw, 100px);
+}
+
+.info__logo {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(13px, 2vw, 32px);
+}
+
+.info__text,
+.facts__text {
+  font-size: clamp(12px, 2vw, 20px);
+}
+
+.facts__img {
+  background-size: cover;
+}
+
+.facts__img_square {
+  background-position: center;
+  background-image: url(/img/aboutUsPage/people1.jpg);
+  height: clamp(230px, 30vw, 430px);
+}
+
+.facts__img_rentagle {
+  background-position: top;
+  background-image: url(/img/aboutUsPage/people2.jpg);
+  height: clamp(260px, 30vw, 460px);
+}
+
+.facts__text_bold {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(22px, 2vw, 36px);
+}
+
+.heading {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  letter-spacing: 5px;
+  font-size: clamp(20px, 2.7vw, 32px);
+}
+
+.circle {
+  position: absolute;
+  background: radial-gradient(rgba(67, 171, 225, 0.4) 0%, rgba(0, 28, 86, 0.8) 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: -1;
+  margin-top: 200px;
+  margin-left: 330px;
+  height: clamp(100px, 50vw, 220px);
+  width: clamp(100px, 50vw, 220px);
+}
+
+.contacts__svg {
+  height: clamp(30px, 5vw, 48px);
+  width: clamp(30px, 5vw, 48px);
+}
+
+.contacts__svg_phone {
+  height: clamp(25px, 5vw, 43px);
+  width: clamp(25px, 5vw, 43px);
+}
+
+.contacts__name,
+.contacts__info {
+  font-size: clamp(10px, 2vw, 18px);
+}
+
+.contacts__name,
+.contacts__info,
+.contacts__info_big {
+  letter-spacing: 2px;
+}
+
+.contacts__info_big {
+  font-size: clamp(11px, 2vw, 20px);
+}
+
+.qa__box {
+  background-image: url(/img/aboutUsPage/bg_qa.jpg);
+  background-size: cover;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 110px 0;
+  box-shadow: #000000 0px 80px 60px 30px inset, rgb(0, 0, 0) 0px -80px 60px -40px inset;
+}
+@media (max-width: 576px) {
+  .qa__box {
+    padding: 40px 0;
+  }
+}
+
+.qa__handler {
+  padding: 15px 35px;
+  border-radius: 10px;
+  background-color: rgba(160, 211, 248, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.qa__answer, .qa__question {
+  font-size: clamp(11px, 2vw, 16px);
+}
+
+.qa__question {
+  font-family: "Futurica ExtraBold", "sans-serif";
+}/*# sourceMappingURL=aboutUsPage.css.map */

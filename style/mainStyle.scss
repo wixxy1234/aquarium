@@ -1,0 +1,54 @@
+/*подключеине шрифтов*/
+@font-face {
+    font-family: 'Futurica Regular';
+    src: url(/fonts/afuturica.ttf);
+}
+
+@font-face {
+    font-family: 'Futurica ExtraBold';
+    src: url(/fonts/afuturicaextrabold.ttf);
+}
+
+@font-face {
+    font-family: 'Futurica Light';
+    src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+
+
+/*основные переменные*/
+$primary-color: #FFFFFF;
+$bg-color: #000;
+$btn-color: rgba(0, 61, 188, 1);
+$font-regular: 'Futurica Regular', 'sans-serif';
+$font-extraBold: 'Futurica ExtraBold', 'sans-serif';
+$font-light: 'Futurica Light', 'sans-serif';
+$big-heading-pc: 48px;
+$big-heading-phone: 22px;
+$second-heading-pc: 32px;
+$second-heading-phone: 18px;
+$third-heading-pc: 24px;
+$third-heading-phone: 14px;
+$default-text-pc: 20px;
+$default-text-phone: 12px;
+$small-text-pc: 16px;
+$small-text-phone: 10px;
+
+
+.container-fluid{
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $bg-color;
+    color: $primary-color;
+}
+main{
+    flex: 1;
+    margin-top: 70px;
+}

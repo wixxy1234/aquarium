@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #000 !important;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background: #000;
+  color: #FFFFFF;
+}
+
+.container {
+  padding-bottom: clamp(50px, 10vw, 170px);
+}
+
+.main-ticket {
+  background-image: url(/img/ticketsPage/main_exhibition.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.main-ticket__text {
+  height: 100%;
+  padding: 70px 105px 70px 60px;
+  background: linear-gradient(to right, transparent, rgb(0, 28, 86));
+}
+@media (max-width: 991px) {
+  .main-ticket__text {
+    padding: 40px 75px 40px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .main-ticket__text {
+    padding: 40px 35px 40px 60px;
+  }
+}
+@media (max-width: 447px) {
+  .main-ticket__text {
+    padding: 10px 35px 40px 10px;
+  }
+}
+
+.main-ticket__heading {
+  font-size: clamp(20px, 2.7vw, 40px);
+  letter-spacing: 3px;
+}
+
+.main-ticket__description {
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.main-ticket__btn {
+  border: 1px solid #FFFFFF;
+  background: none;
+  border-radius: 30px;
+  padding-top: clamp(4px, 0.5vw, 9px);
+  padding-bottom: clamp(4px, 0.5vw, 9px);
+}
+.main-ticket__btn a {
+  font-family: "Futurica Light", "sans-serif";
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+
+.heading {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  letter-spacing: 5px;
+  font-size: clamp(20px, 2.7vw, 32px);
+  margin-bottom: clamp(10px, 2vw, 30px) !important;
+  margin-top: clamp(30px, 20vw, 100px) !important;
+}
+
+.card {
+  height: 100%;
+  background-color: rgba(160, 211, 248, 0.199);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  border: none;
+}
+.card .img-wrapper__card-title {
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(16px, 2vw, 24px);
+  letter-spacing: 2px;
+}
+.card .img-wrapper {
+  position: relative;
+}
+.card .card-body {
+  font-family: "Futurica Regular", "sans-serif" !important;
+}
+.card .btn {
+  background-color: rgb(0, 61, 188);
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(12px, 2vw, 16px);
+  padding: clamp(5px, 2vw, 9px) clamp(15px, 5vw, 26px);
+}
+.card .card-text {
+  font-family: "Futurica Regular", "sans-serif";
+  font-size: clamp(12px, 2vw, 14px);
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  /*  flexbox для обрезки */
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  /* количество строк до 3 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .img-wrapper__text-content {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 16px;
+  letter-spacing: 2px;
+}
+.card .img-wrapper__tickets {
+  font-size: clamp(11px, 2vw, 14px);
+}
+.card .bage {
+  height: 22px;
+  width: 22px;
+}
+.card .card-body__cost {
+  font-size: clamp(12px, 2vw, 14px);
+}
+.card .card-body__cost_big {
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.card_big {
+  position: relative;
+}
+.card_big .card-img-top {
+  border-radius: 10px;
+}
+.card_big .img-wrapper {
+  position: absolute;
+  box-shadow: rgba(0, 11, 34, 0.747) 0px -180px 100px -40px inset;
+  width: 100%;
+  height: 100%;
+}
+.card_big .card-img-top {
+  height: 100%;
+}
+.card_big .card-body {
+  width: 100%;
+  padding: 0 44px;
+  position: absolute;
+  padding-bottom: 0;
+  bottom: 21px;
+  background-color: transparent;
+}
+.card_big .img-wrapper__text-content {
+  padding: 0 44px;
+  bottom: 85px;
+  width: 100%;
+}
+.card_big .btn {
+  background-color: rgb(0, 61, 188);
+  padding: clamp(5px, 2vw, 9px) clamp(15px, 5vw, 40px);
+}
+
+.circle {
+  position: absolute;
+  background: radial-gradient(rgba(67, 171, 225, 0.4) 0%, rgba(0, 28, 86, 0.8) 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.row__circle_big {
+  margin-top: -80px;
+  margin-left: -20px;
+  z-index: -1;
+  height: clamp(200px, 50vw, 400px);
+  width: clamp(200px, 50vw, 400px);
+}
+@media (max-width: 767px) {
+  .row__circle_big {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+.row__circle_small {
+  z-index: -1;
+  right: 350px;
+  margin-top: 220px;
+  height: clamp(100px, 50vw, 300px);
+  width: clamp(100px, 50vw, 300px);
+}
+
+.row__circle_extra-small {
+  z-index: -1;
+  right: 200px;
+  margin-top: 200px;
+  height: clamp(50px, 50vw, 200px);
+  width: clamp(50px, 50vw, 200px);
+}/*# sourceMappingURL=ticketsPage.css.map */

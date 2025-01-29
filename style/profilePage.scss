@@ -1,0 +1,169 @@
+@use 'mainStyle.scss';
+
+main {
+    margin-top: 0 !important;
+    font-family: mainStyle.$font-regular;
+}
+
+.container {
+    padding-bottom: clamp(50px, 10vw, 170px);
+}
+
+.profile__bg-img {
+    position: relative;
+    background-image: url(/img/profilePage/image-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: clamp(150px, 30vh, 250px);
+    width: 100%;
+
+}
+
+.profile {
+    @media (max-width: 640px) {
+        margin-top: 60px;
+    }
+
+    @media (min-width: 641px) and (max-width: 980px) {
+        margin-top: 90px;
+    }
+
+    @media (min-width: 981px) and (max-width: 1200px) {
+        margin-top: 100px;
+    }
+
+    @media (min-width: 1201px) {
+        margin-top: 120px;
+    }
+}
+
+.profile__img-user {
+    position: absolute;
+    height: clamp(100px, 17vw, 200px);
+    width: clamp(100px, 17vw, 200px);
+    overflow: hidden;
+    top: clamp(120px, 17vh, 150px);
+    z-index: 2;
+
+}
+
+.profile__name-user {
+    font-family: mainStyle.$font-extraBold;
+    color: mainStyle.$primary-color;
+    font-size: clamp(16px, 2vw, 25px);
+}
+
+.heading {
+    font-family: mainStyle.$font-extraBold;
+    font-size: clamp(14px, 2vw, 17px);
+}
+
+.events {
+    font-size: clamp(12px, 2vw, 15px);
+
+}
+
+.row-second {
+    margin-top: clamp(20px, 6vw, 100px);
+}
+
+.promo {
+    background-color: rgba(160, 211, 248, 0.15);
+    padding: clamp(20px, 5vw, 50px);
+    border-radius: 10px;
+}
+
+.promo-form__input {
+    background-color: transparent;
+    border: 1px solid mainStyle.$primary-color;
+    color: mainStyle.$primary-color;
+    border-radius: 50px;
+    font-size: clamp(12px, 2vw, 16px);
+    padding: clamp(2px, 2.5vw, 10px) clamp(9px, 2.5vw, 20px);
+
+
+    &::placeholder {
+        color: mainStyle.$primary-color;
+        font-size: clamp(12px, 2vw, 16px);
+    }
+}
+
+.promo-form__btn {
+    width: min-content;
+    padding: clamp(1px, 1vw, 9px) clamp(9px, 1vw, 20px);
+
+    height: min-content;
+    color: mainStyle.$primary-color;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: clamp(10px, 2vw, 16px);
+    transition: background 0.7s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.feedback__heading {
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+.feedback__img {
+    height: clamp(20px, 5vw, 30px);
+    width: clamp(20px, 5vw, 30px);
+}
+
+#phone {
+    height: clamp(15px, 5vw, 25px);
+    width: clamp(15px, 5vw, 25px);
+}
+
+.feedback__info-text {
+    font-size: clamp(10px, 2vw, 14px);
+
+}
+
+
+.circle {
+    display: block;
+    position: absolute;
+    background: radial-gradient(rgba(67, 171, 225, 0.4) 0%, rgba(0, 28, 86, 0.8) 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+
+.row__circle_extra-small {
+    z-index: -1;
+    top: 0;
+    left: 300px;
+    height: clamp(50px, 50vw, 200px);
+    width: clamp(50px, 50vw, 200px);
+}
+
+.admin-panel{
+    margin-bottom: 100px;
+    border: 1px solid mainStyle.$primary-color;
+    border-radius: 20px;
+    padding: clamp(10px, 5vw, 20px);
+}
+
+.admin__btns{
+    width: 100%;
+    color: mainStyle.$primary-color;
+    background-color: rgba(0, 61, 188, 1);
+    border: none;
+    border-radius: 30px;
+    font-size: clamp(12px, 2vw, 16px);
+    padding: clamp(5px, 2vw, 9px) clamp(15px, 5vw, 25px);
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}

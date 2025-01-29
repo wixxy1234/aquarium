@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+.btn-create {
+  background-color: rgb(0, 61, 188);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(12px, 2vw, 16px);
+  padding: 8px 18px;
+}
+.btn-create:hover {
+  background-color: rgb(8, 54, 155);
+}/*# sourceMappingURL=createEvent.css.map */

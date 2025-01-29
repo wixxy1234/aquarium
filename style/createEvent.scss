@@ -1,0 +1,13 @@
+@use 'mainStyle.scss';
+
+.btn-create{
+        background-color: mainStyle.$btn-color;
+        color: mainStyle.$primary-color;
+        border: none;
+        border-radius: 30px;
+        font-size: clamp(12px, 2vw, 16px);
+        padding: 8px 18px;
+        &:hover {
+            background-color: rgb(8, 54, 155);
+        }
+}

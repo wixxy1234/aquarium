@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*подключеине шрифтов*/
+@font-face {
+  font-family: "Futurica Regular";
+  src: url(/fonts/afuturica.ttf);
+}
+@font-face {
+  font-family: "Futurica ExtraBold";
+  src: url(/fonts/afuturicaextrabold.ttf);
+}
+@font-face {
+  font-family: "Futurica Light";
+  src: url(/fonts/ofont.ru_a_FuturicaBs.ttf);
+}
+/*основные переменные*/
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+table {
+  font-family: "Futurica Regular", "sans-serif";
+  width: 100%;
+}
+
+table, th, td {
+  table-layout: fixed;
+  color: #FFFFFF !important;
+  background-color: #000 !important;
+  border: 1px solid #FFFFFF !important;
+}
+
+caption {
+  caption-side: top;
+  color: #FFFFFF !important;
+  font-family: "Futurica ExtraBold", "sans-serif";
+  font-size: clamp(12px, 2vw, 20px);
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: clamp(2px, 1vw, 10px) !important;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: clamp(8px, 2vw, 16px);
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 4%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 19%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 30%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 10%;
+}
+
+th:nth-child(5), td:nth-child(5) {
+  width: 25%;
+}
+
+td a {
+  cursor: pointer;
+}/*# sourceMappingURL=deleteEvent.css.map */

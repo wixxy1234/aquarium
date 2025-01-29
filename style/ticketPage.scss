@@ -1,0 +1,172 @@
+@use 'mainStyle.scss';
+
+.main-desc {
+    margin-bottom: clamp(35px, 10vw, 70px);
+
+    .main-desc__img {
+        transform: rotate(12deg);
+        width: auto;
+        height: clamp(130px, 17vw, 230px);
+
+    }
+
+    .main-desc__name {
+        font-family: mainStyle.$font-extraBold;
+        font-size: clamp(24px, 2vw, 35px);
+        letter-spacing: 2.5px;
+    }
+
+    .main-desc__desc {
+        font-family: mainStyle.$font-light;
+        font-size: clamp(mainStyle.$default-text-phone, 1.8vw, mainStyle.$default-text-pc);
+    }
+}
+
+
+.ticket-row {
+    padding-bottom: 12px;
+    font-family: mainStyle.$font-regular;
+    border-bottom: 1px solid mainStyle.$primary-color;
+}
+
+.ticket-row__name {
+    font-size: clamp(mainStyle.$default-text-phone, 2vw, mainStyle.$default-text-pc);
+    letter-spacing: 0.8px;
+
+}
+
+.ticket-row__name_desc {
+    font-family: mainStyle.$font-light;
+    font-size: clamp(8px, 2vw, 12px);
+}
+
+.ticket-row__cost,
+.ticket-row__cost_currency {
+    font-size: clamp(12px, 1.8vw, 22px);
+    letter-spacing: 1.5px;
+}
+
+.ticket-row__img {
+    .img-ticket {
+        @media (max-width: 660px) {
+            height: 45px;
+        }
+
+        @media (max-width: 425px) {
+            height: 35px;
+        }
+
+        @media (max-width: 320px) {
+            height: 25px;
+        }
+    }
+}
+
+.ticket-row__btns {
+    .ticket-row__count-ticket {
+        font-size: clamp(mainStyle.$third-heading-phone, 2vw, mainStyle.$third-heading-pc);
+    }
+
+    .ticket-row__btn {
+        background-color: transparent !important;
+        color: mainStyle.$primary-color;
+        font-family: mainStyle.$font-light;
+        font-size: clamp(mainStyle.$third-heading-phone, 2vw, 35px);
+
+    }
+
+    .ticket-row__btn_minus {
+        font-size: clamp(10px, 1.6vw, 21px);
+        background-color: transparent;
+
+    }
+}
+
+.footnote {
+    font-family: mainStyle.$font-light;
+    font-size: clamp(10px, 1.6vw, 13px);
+
+}
+
+.total,
+.text-total {
+    font-size: clamp(15px, 2.2vw, mainStyle.$default-text-pc);
+}
+
+// .btn-wrapper {
+//     margin-bottom: clamp(10px, 20vw, 40px);
+// }
+
+.btns-ticket {
+    color: mainStyle.$primary-color;
+    border: none;
+    border-radius: 30px;
+    font-size: clamp(12px, 2vw, 18px);
+}
+
+.btn-buy {
+    background-color: mainStyle.$btn-color;
+
+    &:hover {
+        background-color: rgb(8, 54, 155);
+
+    }
+}
+
+.btn-exit {
+    background-color: rgb(83, 83, 83);
+
+    &:hover {
+        background-color: rgb(63, 62, 62);
+
+    }
+}
+.btn-redact{
+    width: min-content;
+    color: mainStyle.$primary-color;
+    background-color: transparent;
+    border: 1px solid mainStyle.$primary-color;
+    &:hover{
+        background-color: rgb(63, 62, 62);
+        border: 1px solid mainStyle.$primary-color;
+
+    }
+}
+
+
+.circle {
+    display: block;
+    position: absolute;
+    background: radial-gradient(rgba(67, 171, 225, 0.4) 0%, rgba(0, 28, 86, 0.8) 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+
+.row__circle_extra-small {
+    z-index: -1;
+    left: 350px;
+    top: 250px;
+    height: clamp(50px, 50vw, 200px);
+    width: clamp(50px, 50vw, 200px);
+}
+
+
+.alert {
+    // display: none;
+    height: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    visibility: hidden;
+    font-size: clamp(12px, 2vw, 18px);
+
+}
+
+.alert.d-block {
+    height: min-content;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
