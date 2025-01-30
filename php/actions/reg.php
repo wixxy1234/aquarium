@@ -1,20 +1,19 @@
 <?php
 
-
 // ЗАЩИТА ОТ DDOS-АТАК
 session_start();
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $now = time();
-$limit = 5; // Максимум попыток регистрации
-$timeFrame = 60; // Время в секундах
+$limit = 5; 
+$timeFrame = 60; 
 
 // Инициализация массива, если его еще нет
 if (!isset($_SESSION['registration_requests'])) {
     $_SESSION['registration_requests'] = [];
 }
 
-// Удаление старых запросов
+// Удаление старых запросовadd
 $_SESSION['registration_requests'] = array_filter($_SESSION['registration_requests'], function($timestamp) use ($now, $timeFrame) {
     return ($now - $timestamp) < $timeFrame;
 });
