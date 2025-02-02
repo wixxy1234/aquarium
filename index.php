@@ -22,14 +22,6 @@
     <link rel="stylesheet" href="/style/mainStyle.css">
 
 
-
-    <!-- <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-
-
     <script defer src="/script/script.js"></script>
 </head>
 
@@ -37,7 +29,7 @@
     <?php
     $root = $_SERVER['DOCUMENT_ROOT'];
     include "$root/php/pages/header.php"
-        ?>
+    ?>
 
     <main class="m-0">
 
@@ -77,14 +69,24 @@
                     <div
                         class="layers__right-side col-md-2 d-none d-md-block border-end border-1 border-white me-4 me-xxl-5">
                         <ul class="swiper-pagination__ul text-end ps-1 h-100 d-flex flex-column justify-content-around">
-                            <li class="swiper-pagination__li li ">Тихий океан <span class="badge"><svg
+                            <li class="swiper-pagination__li li d-flex align-items-center justify-content-end"> 
+                                <div class="swiper-pagination__name me-2">
+                                    <span>Тихий</span>
+                                    <span>океан</span>
+                                </div>
+                                <span class="badge"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                                         class="bi bi-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                                     </svg></span>
                                 <img src="/img/svg/line.svg" alt="line">
                             </li>
-                            <li class="swiper-pagination__li li">Индийский океан <span class="badge">
+                            <li class="swiper-pagination__li li d-flex align-items-center justify-content-end">
+                                <div class="swiper-pagination__name me-2">
+                                    <span>Индийский</span>
+                                    <span>океан</span>
+                                </div>
+                                <span class="badge">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                                         class="bi bi-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -92,7 +94,12 @@
                                 </span>
                                 <img src="/img/svg/line.svg" alt="line">
                             </li>
-                            <li class="swiper-pagination__li li">Атлантический океан <span class="badge"><svg
+                            <li class="swiper-pagination__li li d-flex align-items-center justify-content-end">
+                                <div class="swiper-pagination__name me-2">
+                                    <span>Атлантический</span>
+                                    <span>океан</span>
+                                </div>
+                                <span class="badge"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                                         class="bi bi-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -104,17 +111,6 @@
                     </div>
 
                     <div class="layer layers__base" style="background-image: url(/img/slider/ocean.jpg);">
-                        <!-- style="background-image: url(/img/slider/ocean.jpg);"-->
-                        <!-- <div style="all: initial; position: none; position: relative;"> -->
-                        <!-- </div> -->
-                        <!-- <div class="swiper sample-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="img/slider/атлант.png"></div>
-                                <div class="swiper-slide"><img src="img/slider/инд.png"></div>
-                                <div class="swiper-slide"><img src="img/slider/тихий.png"></div>
-                            </div>
-                        </div> -->
-
                     </div>
 
                     <div class="layer layers__front" style="background-image: url(/img/slider/people.png);"></div>
@@ -167,8 +163,6 @@
                                     <img src="/img/svg/coral.svg" alt="coral" class="card__svg svg__coral">
 
                                 </div>
-
-
 
                                 <div class="card col-6 col-lg-4 mb-2 mt-4 mt-md-5 mb-md-5 ">
                                     <div class="catalog-mini__card p-2 p-sm-3">
@@ -450,7 +444,7 @@
     <?php
     $root = $_SERVER['DOCUMENT_ROOT'];
     include "$root/php/pages/footer.php"
-        ?>
+    ?>
 
 
 

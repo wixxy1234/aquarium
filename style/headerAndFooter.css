@@ -93,10 +93,10 @@ footer .second-floord__copyright {
   font-size: clamp(10px, 1.4vw, 14px) !important;
 }
 footer .second-floor__social-media img {
-  height: clamp(15px, 2vw, 30px);
+  height: clamp(20px, 2vw, 30px);
 }
 footer .second-floor__social-media #yandex {
-  height: clamp(11px, 1.5vw, 22px);
+  height: clamp(15px, 1.5vw, 22px);
   vertical-align: top;
 }
 @media (max-height: 1030px) {
@@ -158,8 +158,8 @@ footer .second-floor__social-media #yandex {
   padding: 9px clamp(20px, 2.6vw, 45px);
   letter-spacing: 1px;
 }
-#exampleModal button:focus {
-  outline: none;
+#exampleModal button:focus-visible {
+  outline: 2px solid #86b7fe;
 }
 #exampleModal button.ghost {
   background-color: rgba(255, 255, 255, 0.2);
@@ -319,4 +319,4 @@ header .navbar__logo-name,
 footer .navbar__logo-name {
   color: #FFFFFF !important;
   line-height: clamp(14px, 2vw, 20px) !important;
-}/*# sourceMappingURL=headerAndFooter.css.map */
+}/*# sourceMappingURL=maps/headerAndFooter.css.map */

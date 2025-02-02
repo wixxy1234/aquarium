@@ -91,15 +91,18 @@
     font-family: mainStyle.$font-light;
     font-size: clamp(13px, 1.3vw, 16px);
 }
-.layers__right-side{
+
+.layers__right-side {
     // border: 1px solid mainStyle.$primary-color;
     height: 250px;
 }
-.swiper-pagination__li{
+
+.swiper-pagination__li {
     font-family: mainStyle.$font-light;
     font-size: clamp(14px, 1.3vw, 18px);
 }
-.badge{
+
+.badge {
     padding: 0;
 }
 
@@ -141,12 +144,14 @@
 }
 
 .card-img-top {
-    height: clamp(80px, 20vw, 230px);
     width: 100%;
-    @media (max-height: 1020px) {
+    height: clamp(80px, 20vw, 230px);
+
+    @media (max-width: 1030px) {
         height: clamp(100px, 20vw, 197px);
     }
 }
+
 
 .card-title {
     margin-bottom: 0 !important;
@@ -263,8 +268,10 @@
     opacity: 0;
     transition: opacity 1s ease;
 }
+
 .advantages__item.visible {
-    opacity: 1; /* Показываем элементы, когда добавлен класс visible */
+    opacity: 1;
+    /* Показываем элементы, когда добавлен класс visible */
 }
 
 .advantages__item_move {
@@ -505,33 +512,8 @@
     }
 }
 
-:root {
-    --first: "first";
-    --second: "second";
-    --third: "third";
-}
 
-#id0::before {
-    color: white;
-    position: relative;
-    right: 70px;
-    bottom: 6px;
-    content: var(--first);
-}
-#id1::before {
-    color: white;
-    position: relative;
-    right: 70px;
-    bottom: 6px;
-    content: var(--second);
-}
-#id2::before {
-    color: white;
-    position: relative;
-    right: 70px;
-    bottom: 6px;
-    content: var(--third);
-}
+
 .sample-slider img {
     width: 100%;
 }
@@ -544,6 +526,7 @@
     border: 1px solid white;
     /* border-style: double;     */
 }
+
 .swiper-pagination-bullet::after {
     position: relative;
     bottom: 13px;

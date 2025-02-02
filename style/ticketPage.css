@@ -112,7 +112,7 @@ main {
 
 .total,
 .text-total {
-  font-size: clamp(15px, 2.2vw, 20px);
+  font-size: clamp(15px, 2.2vw, 22px);
 }
 
 .btns-ticket {
@@ -182,4 +182,4 @@ main {
   height: min-content;
   visibility: visible !important;
   opacity: 1 !important;
-}/*# sourceMappingURL=ticketPage.css.map */
+}/*# sourceMappingURL=maps/ticketPage.css.map */

@@ -173,10 +173,10 @@ main {
 }
 
 .card-img-top {
-  height: clamp(80px, 20vw, 230px);
   width: 100%;
+  height: clamp(80px, 20vw, 230px);
 }
-@media (max-height: 1020px) {
+@media (max-width: 1030px) {
   .card-img-top {
     height: clamp(100px, 20vw, 197px);
   }
@@ -304,7 +304,8 @@ main {
 }
 
 .advantages__item.visible {
-  opacity: 1; /* Показываем элементы, когда добавлен класс visible */
+  opacity: 1;
+  /* Показываем элементы, когда добавлен класс visible */
 }
 
 @media (min-width: 992px) {
@@ -544,36 +545,6 @@ main {
     opacity: 1;
   }
 }
-:root {
-  --first: "first";
-  --second: "second";
-  --third: "third";
-}
-
-#id0::before {
-  color: white;
-  position: relative;
-  right: 70px;
-  bottom: 6px;
-  content: var(--first);
-}
-
-#id1::before {
-  color: white;
-  position: relative;
-  right: 70px;
-  bottom: 6px;
-  content: var(--second);
-}
-
-#id2::before {
-  color: white;
-  position: relative;
-  right: 70px;
-  bottom: 6px;
-  content: var(--third);
-}
-
 .sample-slider img {
   width: 100%;
 }
@@ -601,4 +572,4 @@ main {
 
 .swiper-pagination-bullet-active {
   background-color: rgb(255, 255, 255);
-}/*# sourceMappingURL=mainPage.css.map */
+}/*# sourceMappingURL=maps/mainPage.css.map */

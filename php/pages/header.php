@@ -82,7 +82,7 @@
                             <div class="invalid-feedback text-start">
                                 Пожалуйста, заполите поле верно.
                             </div>
-                            <button class="mt-4">Создать</button>
+                            <button class="mt-4" tabindex="9">Создать</button>
                         </form>
                     </div>
                     <div class=" form-container sign-in-container">
@@ -104,7 +104,7 @@
                                 echo "<div class='error text-danger'>Неверный логин или пароль</div>";
                             }
                             ?>
-                            <button>Войти</button>
+                            <button tabindex="0">Войти</button>
                         </form>
                     </div>
                     <div class="overlay-container">
